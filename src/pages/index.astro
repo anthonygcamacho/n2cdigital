@@ -1,8 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import HomeHero from '../components/HomeHero.astro';   
+import HomeAboutUs from '../components/HomeAboutUs.astro';
+import HomeServices from '../components/HomeServices.svelte';
 ---
 
 <Layout>
     <HomeHero />
+    <HomeAboutUs />
+    <HomeServices client:load />
 </Layout>
