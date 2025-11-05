@@ -46,16 +46,22 @@ export const SOCIAL_LINKS = [
 export const SERVICES: Service[] = [
   { 
     icon: ShareIcon, 
-    title: 'Social Media Marketing', 
+    title: 'AI Marketing Solutions', 
     description: 'Engage your audience and build a strong brand presence on social media.',
     detailedDescription: 'We create and manage high-impact social media campaigns across platforms like LinkedIn, Instagram, Facebook, and more. Our services include content creation, community management, paid social advertising, and detailed analytics to grow your following, increase engagement, and drive conversions.'
   },
-  { 
-    icon: PencilAltIcon, 
-    title: 'Content Marketing', 
-    description: 'Attract and retain customers with valuable, relevant, and consistent content.',
-    detailedDescription: 'We develop a comprehensive content strategy that establishes your brand as a thought leader in your industry. From blog posts and articles to videos and infographics, we create high-quality content that resonates with your target audience, drives organic traffic, and nurtures leads through the sales funnel.'
-  },
+  // { 
+  //   icon: ShareIcon, 
+  //   title: 'Social Media Marketing', 
+  //   description: 'Engage your audience and build a strong brand presence on social media.',
+  //   detailedDescription: 'We create and manage high-impact social media campaigns across platforms like LinkedIn, Instagram, Facebook, and more. Our services include content creation, community management, paid social advertising, and detailed analytics to grow your following, increase engagement, and drive conversions.'
+  // },
+  // { 
+  //   icon: PencilAltIcon, 
+  //   title: 'Content Marketing', 
+  //   description: 'Attract and retain customers with valuable, relevant, and consistent content.',
+  //   detailedDescription: 'We develop a comprehensive content strategy that establishes your brand as a thought leader in your industry. From blog posts and articles to videos and infographics, we create high-quality content that resonates with your target audience, drives organic traffic, and nurtures leads through the sales funnel.'
+  // },
 //   { 
 //     icon: ChartBarIcon, 
 //     title: 'PPC', 
@@ -64,13 +70,13 @@ export const SERVICES: Service[] = [
 //   },
   { 
     icon: SearchIcon, 
-    title: 'SEO', 
+    title: 'AI Assisted SEO', 
     description: 'Boost your visibility on search engines and attract organic traffic.',
     detailedDescription: 'Our comprehensive SEO strategies are designed to increase your website\'s rankings on search engines like Google. We conduct in-depth keyword research, on-page optimization, technical SEO audits, and quality link building to drive sustainable organic growth and attract highly qualified leads to your business.'
   },
   { 
     icon: CodeIcon, 
-    title: 'Web Development', 
+    title: 'AI Website Development', 
     description: 'Create stunning, responsive, and user-friendly websites that convert.',
     detailedDescription: 'We build beautiful, high-performance websites that provide an exceptional user experience on any device. Our development process is focused on creating a fast, secure, and SEO-friendly foundation that not only looks great but also functions as a powerful marketing tool to convert visitors into customers.'
   },

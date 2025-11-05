@@ -37,10 +37,10 @@
             <nav class="hidden lg:block">
                 <ul class="flex items-center space-x-8">
                     <li><a href="/" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>Home</a></li>
-                    <li><a href="#about-us" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>About Us</a></li>
-                    <li><a href="#services" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>Services</a></li>
+                    <li><a href="/#about-us" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>About Us</a></li>
+                    <li><a href="/#services" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>Services</a></li>
                     <!-- <li><a href="blog" class="font-medium transition-colors duration-200 text-white hover:text-gray-200">Blog</a></li> -->
-                    <li><a href="#testimonials" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>Testimonials</a></li>
+                    <li><a href="/#testimonials" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>Testimonials</a></li>
                     <li><a href="faq" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>FAQ</a></li>
                     <li><a href="contact" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>Contact Us</a></li>
                 </ul>
@@ -48,7 +48,7 @@
             {#if !isStartHerePage}
                 <div class="hidden lg:block">
                     <!-- svelte-ignore a11y_invalid_attribute -->
-                    <a href="/starthere" class="px-6 py-2 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors duration-300">Let's Talk</a>
+                    <a href="/starthere" class="px-6 py-2 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors duration-300">Let's Get Started</a>
                 </div>
             {:else}
                 <div class="hidden lg:block w-24"></div>
@@ -72,14 +72,14 @@
             </div>
             <nav class="flex flex-col items-center space-y-8 mt-8"> 
                 <a href="/" on:click={toggleMenu} class="font-medium text-2xl text-white">Home</a>
-                <a href="#about-us" on:click={toggleMenu} class="font-medium text-2xl text-white">About Us</a>
-                <a href="#services" on:click={toggleMenu} class="font-medium text-2xl text-white">Services</a>
+                <a href="/#about-us" on:click={toggleMenu} class="font-medium text-2xl text-white">About Us</a>
+                <a href="/#services" on:click={toggleMenu} class="font-medium text-2xl text-white">Services</a>
                 <!-- <li><a href="blog" class="font-medium transition-colors duration-200 text-white hover:text-gray-200">Blog</a></li> -->
-                <a href="#testimonials" on:click={toggleMenu} class="font-medium text-2xl text-white">Testimonials</a>
+                <a href="/#testimonials" on:click={toggleMenu} class="font-medium text-2xl text-white">Testimonials</a>
                 <a href="faq" on:click={toggleMenu} class="font-medium text-2xl text-white">FAQ</a>
                 <a href="contact" on:click={toggleMenu} class="font-medium text-2xl text-white">Contact Us</a>
                 {#if !isStartHerePage}
-                    <a href="/starthere" on:click={toggleMenu} class="mt-4 px-8 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors duration-300">Let's Talk</a>
+                    <a href="/starthere" on:click={toggleMenu} class="mt-4 px-8 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors duration-300">Let's Get Started</a>
                 {/if}
             </nav>
         </div>
