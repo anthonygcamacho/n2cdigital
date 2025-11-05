@@ -16,7 +16,7 @@ import Footer from '../components/Footer.astro';
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 	</head>
 	<body class="relative">
-		<Header />
+		<Header client:load />
 		<slot />
 		<Footer />
 	</body>
