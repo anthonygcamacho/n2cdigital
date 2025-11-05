@@ -1,28 +1,47 @@
 <script lang="ts">
+    import { onMount } from 'svelte';
+
     let isMenuOpen = false;
+    let isHomePage = false; // Default to false, will be updated on mount
+    let y = 0;
+
+    onMount(() => {
+        isHomePage = window.location.pathname === '/';
+        y = window.scrollY;
+    });
+
     function toggleMenu() {
         isMenuOpen = !isMenuOpen;
         console.log("Menu state:", isMenuOpen); 
-    }   
+    }
+
+    $: scrolled = isHomePage && y > 10;
 </script>
 
-<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+<svelte:window bind:scrollY={y} />
+
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+    class:bg-white={!isHomePage || scrolled}
+    class:text-black={!isHomePage || scrolled}
+    class:bg-transparent={isHomePage && !scrolled}
+    class:text-white={isHomePage && !scrolled}
+>
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-20">
 
             <div class="flex-shrink-0">
-                <a href="/" class="text-2xl font-bold text-white"><u>n2c</u>Digital</a>
+                <a href="/" class="text-2xl font-bold" class:text-white={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled}><u>n2c</u>Digital</a>
             </div>
 
             <nav class="hidden lg:block">
                 <ul class="flex items-center space-x-8">
-                    <li><a href="/" class="font-medium transition-colors duration-200 text-white hover:text-gray-200">Home</a></li>
-                    <li><a href="#about-us" class="font-medium transition-colors duration-200 text-white hover:text-gray-200">About Us</a></li>
-                    <li><a href="#services" class="font-medium transition-colors duration-200 text-white hover:text-gray-200">Services</a></li>
+                    <li><a href="/" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>Home</a></li>
+                    <li><a href="#about-us" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>About Us</a></li>
+                    <li><a href="#services" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>Services</a></li>
                     <!-- <li><a href="blog" class="font-medium transition-colors duration-200 text-white hover:text-gray-200">Blog</a></li> -->
-                    <li><a href="#testimonials" class="font-medium transition-colors duration-200 text-white hover:text-gray-200">Testimonials</a></li>
-                    <li><a href="faq" class="font-medium transition-colors duration-200 text-white hover:text-gray-200">FAQ</a></li>
-                    <li><a href="contact" class="font-medium transition-colors duration-200 text-white hover:text-gray-200">Contact Us</a></li>
+                    <li><a href="#testimonials" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>Testimonials</a></li>
+                    <li><a href="faq" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>FAQ</a></li>
+                    <li><a href="contact" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>Contact Us</a></li>
                 </ul>
             </nav>
             <div class="hidden lg:block">
@@ -31,7 +50,7 @@
             </div>
             <div class="lg:hidden">
                 <!-- svelte-ignore a11y_consider_explicit_label -->
-                <button on:click={toggleMenu} class="focus:outline-none text-white">
+                <button on:click={toggleMenu} class="focus:outline-none" class:text-white={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled}>
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                 </button>
             </div>
