@@ -23,7 +23,7 @@
             </nav>
             <div class="hidden lg:block">
                 <!-- svelte-ignore a11y_invalid_attribute -->
-                <a href="#" class="px-6 py-2 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors duration-300">Let's Talk</a>
+                <a href="/starthere" class="px-6 py-2 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors duration-300">Let's Talk</a>
             </div>
             <div class="lg:hidden">
                 <!-- svelte-ignore a11y_consider_explicit_label -->

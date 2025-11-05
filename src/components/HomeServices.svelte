@@ -5,8 +5,6 @@
 
     let selectedService: Service | null = null;
 
-    console.log('Services loaded:', SERVICES);
-
     function openPopup(service: Service) {
         selectedService = service;
         console.log('Selected service:', service);

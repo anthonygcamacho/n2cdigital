@@ -1,0 +1,26 @@
+---
+import { LINKEDIN_POSTS } from '../constants.ts';
+import type { LinkedInPost } from '../types';
+---
+
+<section id="linkedin-posts" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Our Latest on LinkedIn</h2>
+            <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">Follow our journey and get the latest insights from our team at <u>n2c</u>Digital.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {LINKEDIN_POSTS.map((post: LinkedInPost) => (
+                <a href={post.postUrl} target="_blank" rel="noopener noreferrer" class="block group bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                    <div class="aspect-square">
+                        <img alt="LinkedIn Post Image" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src={post.imageUrl} />
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4 line-clamp-3">{post.text}</p>
+                        <span class="font-semibold text-blue-600 group-hover:underline">Read more on LinkedIn</span>
+                    </div>
+                </a>
+            ))}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,24 @@
+---
+import { TEAM_MEMBERS } from "@/constants";
+import type { TeamMember } from "@/types";
+---
+
+<section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Meet Our Experts</h2>
+            <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">The talented individuals behind our success stories.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-y-12 gap-x-8">
+            {TEAM_MEMBERS.map((member: TeamMember) => (
+                <a href={member.linkedinUrl} target="_blank" rel="noopener noreferrer" class="group text-center" aria-label="View Anthony Camacho's profile on LinkedIn">
+                    <div class="relative w-48 h-48 mx-auto rounded-full overflow-hidden shadow-lg transform group-hover:scale-105 transition-transform duration-300">
+                        <img alt="Anthony Camacho" class="w-full h-full object-cover" src={member.imageUrl} />
+                    </div>
+                    <h3 class="mt-4 text-xl font-bold group-hover:text-blue-700 transition-colors">{member.name}</h3>
+                    <p class="text-blue-600">{member.role}</p>
+                </a>
+            ))}
+        </div>
+    </div>
+</section>

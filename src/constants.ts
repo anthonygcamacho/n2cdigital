@@ -148,9 +148,9 @@ export const TESTIMONIALS: Testimonial[] = [
 
 export const TEAM_MEMBERS: TeamMember[] = [
     { imageUrl: 'https://media.licdn.com/dms/image/v2/C5603AQFfl2Xzg9rx0w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1591327637769?e=1763596800&v=beta&t=-09cvng1IZCmJoB3_cF7i8YBzQGS8J-V5Yi1oEZVB3k', name: 'Anthony Camacho', role: 'Founder & CEO', linkedinUrl: 'https://www.linkedin.com/in/anthonygcamacho' },
-    // { imageUrl: 'https://picsum.photos/200/200?random=21', name: 'Maria Garcia', role: 'Head of SEO' },
-    // { imageUrl: 'https://picsum.photos/200/200?random=22', name: 'David Chen', role: 'Lead Developer' },
-    // { imageUrl: 'https://picsum.photos/200/200?random=23', name: 'Sophia Lee', role: 'Social Media Manager' },
+    // { imageUrl: 'https://picsum.photos/200/200?random=21', name: 'Maria Garcia', role: 'Head of SEO', linkedinUrl: 'https://www.linkedin.com/in/anthonygcamacho' },
+    // { imageUrl: 'https://picsum.photos/200/200?random=22', name: 'David Chen', role: 'Lead Developer', linkedinUrl: 'https://www.linkedin.com/in/anthonygcamacho' },
+    // { imageUrl: 'https://picsum.photos/200/200?random=23', name: 'Sophia Lee', role: 'Social Media Manager', linkedinUrl: 'https://www.linkedin.com/in/anthonygcamacho' },
 ];
 
 export const LINKEDIN_POSTS: LinkedInPost[] = [
