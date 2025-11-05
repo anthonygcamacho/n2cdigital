@@ -3,6 +3,8 @@ import "../global.css"
 import Header from '../components/Header.svelte';
 import Footer from '../components/Footer.astro';
 
+const isHomePage = Astro.url.pathname === '/';
+const isStartHerePage = Astro.url.pathname === '/starthere';
 ---
 
 <!doctype html>
@@ -16,7 +18,7 @@ import Footer from '../components/Footer.astro';
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 	</head>
 	<body class="relative">
-		<Header client:load />
+		<Header client:load isHomePage={isHomePage} isStartHerePage={isStartHerePage} />
 		<slot />
 		<Footer />
 	</body>

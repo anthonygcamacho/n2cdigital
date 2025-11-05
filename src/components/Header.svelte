@@ -1,12 +1,13 @@
 <script lang="ts">
     import { onMount } from 'svelte';
 
+    export let isHomePage: boolean;
+    export let isStartHerePage: boolean;
+
     let isMenuOpen = false;
-    let isHomePage = false; // Default to false, will be updated on mount
     let y = 0;
 
     onMount(() => {
-        isHomePage = window.location.pathname === '/';
         y = window.scrollY;
     });
 
@@ -44,10 +45,14 @@
                     <li><a href="contact" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>Contact Us</a></li>
                 </ul>
             </nav>
-            <div class="hidden lg:block">
-                <!-- svelte-ignore a11y_invalid_attribute -->
-                <a href="/starthere" class="px-6 py-2 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors duration-300">Let's Talk</a>
-            </div>
+            {#if !isStartHerePage}
+                <div class="hidden lg:block">
+                    <!-- svelte-ignore a11y_invalid_attribute -->
+                    <a href="/starthere" class="px-6 py-2 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors duration-300">Let's Talk</a>
+                </div>
+            {:else}
+                <div class="hidden lg:block w-24"></div>
+            {/if}
             <div class="lg:hidden">
                 <!-- svelte-ignore a11y_consider_explicit_label -->
                 <button on:click={toggleMenu} class="focus:outline-none" class:text-white={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled}>
@@ -73,7 +78,9 @@
                 <a href="#testimonials" on:click={toggleMenu} class="font-medium text-2xl text-white">Testimonials</a>
                 <a href="faq" on:click={toggleMenu} class="font-medium text-2xl text-white">FAQ</a>
                 <a href="contact" on:click={toggleMenu} class="font-medium text-2xl text-white">Contact Us</a>
-                <a href="/starthere" on:click={toggleMenu} class="mt-4 px-8 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors duration-300">Let's Talk</a>
+                {#if !isStartHerePage}
+                    <a href="/starthere" on:click={toggleMenu} class="mt-4 px-8 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors duration-300">Let's Talk</a>
+                {/if}
             </nav>
         </div>
     {/if} 
