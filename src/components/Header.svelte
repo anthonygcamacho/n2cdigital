@@ -40,7 +40,7 @@
                     <li><a href="/#about-us" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>About Us</a></li>
                     <li><a href="/#services" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>Services</a></li>
                     <!-- <li><a href="blog" class="font-medium transition-colors duration-200 text-white hover:text-gray-200">Blog</a></li> -->
-                    <li><a href="/#testimonials" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>Testimonials</a></li>
+                    <!-- <li><a href="/#testimonials" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>Testimonials</a></li> -->
                     <li><a href="faq" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>FAQ</a></li>
                     <li><a href="contact" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>Contact Us</a></li>
                 </ul>
@@ -75,7 +75,7 @@
                 <a href="/#about-us" on:click={toggleMenu} class="font-medium text-2xl text-white">About Us</a>
                 <a href="/#services" on:click={toggleMenu} class="font-medium text-2xl text-white">Services</a>
                 <!-- <li><a href="blog" class="font-medium transition-colors duration-200 text-white hover:text-gray-200">Blog</a></li> -->
-                <a href="/#testimonials" on:click={toggleMenu} class="font-medium text-2xl text-white">Testimonials</a>
+                <!-- <a href="/#testimonials" on:click={toggleMenu} class="font-medium text-2xl text-white">Testimonials</a> -->
                 <a href="faq" on:click={toggleMenu} class="font-medium text-2xl text-white">FAQ</a>
                 <a href="contact" on:click={toggleMenu} class="font-medium text-2xl text-white">Contact Us</a>
                 {#if !isStartHerePage}
