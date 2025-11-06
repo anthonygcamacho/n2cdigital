@@ -1,0 +1,10 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FAQ from '../components/FAQ.svelte';
+---
+
+<Layout>
+    <main class="pt-24 bg-gray-50 min-h-screen">
+        <FAQ client:load />
+    </main>
+</Layout>

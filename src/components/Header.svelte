@@ -31,7 +31,11 @@
         <div class="flex items-center justify-between h-20">
 
             <div class="flex-shrink-0">
-                <a href="/" class="text-2xl font-bold" class:text-white={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled}><u>n2c</u>Digital</a>
+                <a href="/" class="text-2xl font-bold" class:text-white={isHomePage && !scrolled} class:text-gray-800={!isHomePage || scrolled}>
+                    <div class="flex items-center space-x-1">
+                        <span class="block px-2" class:bg-white={isHomePage && !scrolled} class:bg-gray-800={!isHomePage || scrolled} class:text-black={isHomePage && !scrolled} class:text-white={!isHomePage || scrolled}>n2c</span><span class="block">Digital</span>
+                    </div>
+                </a>
             </div>
 
             <nav class="hidden lg:block">
