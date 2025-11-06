@@ -10,9 +10,10 @@ import type { TeamMember } from "@/types";
             <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Meet Our Experts</h2>
             <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">The talented individuals behind our success stories.</p>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-y-12 gap-x-8">
+        <!-- <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-y-12 gap-x-8"> -->
+        <div class="flex justify-center gap-y-12 gap-x-8">
             {TEAM_MEMBERS.map((member: TeamMember) => (
-                <a href={member.linkedinUrl} target="_blank" rel="noopener noreferrer" class="group text-center" aria-label="View Anthony Camacho's profile on LinkedIn">
+                <a href={member.linkedinUrl} target="_blank" rel="noopener noreferrer" class="block group text-center" aria-label="View Anthony Camacho's profile on LinkedIn">
                     <div class="relative w-48 h-48 mx-auto rounded-full overflow-hidden shadow-lg transform group-hover:scale-105 transition-transform duration-300">
                         <img alt="Anthony Camacho" class="w-full h-full object-cover" src={member.imageUrl} />
                     </div>
