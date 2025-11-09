@@ -33,7 +33,7 @@
                         <textarea id="availability" name="availability" placeholder="e.g., Weekdays after 3 PM EST, flexible on weekends." rows="4" class="w-full px-4 py-3 bg-gray-50 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
                     </div>
                     <div class="md:col-span-2">
-                        <label for="services-details" class="block text-sm font-medium text-gray-700 mb-1">Details on services you are interested in</label>
+                        <label for="services-details" class="block text-sm font-medium text-gray-700 mb-1">Where would you like to begin?</label>
                         <textarea id="services-details" name="services-details" placeholder="Tell us about your project, goals, and which of our services you're most interested in (e.g., SEO, Social Media, AI Chatbots)." rows="6" class="w-full px-4 py-3 bg-gray-50 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
                     </div>
                 </div>

@@ -1,3 +1,10 @@
+---
+import { getImage } from "astro:assets";
+import whyChooseUs from "../assets/why-choose-us.png";
+
+const optimizedImage = await getImage({ src: whyChooseUs });
+---
+
 <section class="py-20 bg-gray-50">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -29,13 +36,17 @@
                         </div>
                         <div class="ml-4">
                             <h3 class="text-lg font-semibold">Experienced Team</h3>
-                            <p class="mt-1 text-gray-600">Work with a dedicated team of certified digital marketing experts.</p>
+                            <p class="mt-1 text-gray-600">Work with a dedicated team of AI automation and marketing experts.</p>
                         </div>
                     </li>
                 </ul>
             </div>
             <div class="relative h-96">
-                <img alt="A retro television displaying a friendly robot" class="absolute inset-0 w-full h-full object-cover rounded-xl shadow-2xl" src="/src/assets/why-choose-us.png">
+                <img
+                    src={optimizedImage.src}
+                    alt="A retro television displaying a friendly robot"
+                    class="absolute inset-0 w-full h-full object-cover rounded-xl shadow-2xl"
+                />
             </div>
         </div>
     </div>

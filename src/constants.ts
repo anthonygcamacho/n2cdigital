@@ -76,7 +76,7 @@ export const SERVICES: Service[] = [
   },
   { 
     icon: CodeIcon, 
-    title: 'AI Website Development', 
+    title: 'Website Development', 
     description: 'Create stunning, responsive, and user-friendly websites that convert.',
     detailedDescription: 'We build beautiful, high-performance websites that provide an exceptional user experience on any device. Our development process is focused on creating a fast, secure, and SEO-friendly foundation that not only looks great but also functions as a powerful marketing tool to convert visitors into customers.'
   },
@@ -202,6 +202,10 @@ export const FAQS: FAQ[] = [
     answer: 'It\'s about using artificial intelligence to make automated decisions based on data collection and analysis. This helps anticipate your customer\'s next move and improve the customer journey. We use it for personalization, content creation, and campaign optimization.'
   },
   {
+    question: 'How can AI automation benefit my marketing efforts?',
+    answer: 'AI automation can significantly enhance your marketing by streamlining repetitive tasks like email and social media campaigns, allowing your team to focus on strategy. It enables hyper-personalization of content and offers, analyzes data to predict customer behavior, and powers 24/7 customer support through chatbots, leading to increased efficiency, better ROI, and improved customer engagement.'
+  },
+  {
     question: 'How long does it take to see SEO results?',
     answer: 'SEO is a long-term strategy. While some improvements can be seen in as little as 4-6 months, it often takes 6-12 months to see significant results. The timeline depends on factors like your industry\'s competitiveness, your website\'s history, and the keywords you\'re targeting.'
   },
@@ -220,5 +224,5 @@ export const FAQS: FAQ[] = [
   {
     question: 'Do I need to have a big budget to work with you?',
     answer: 'We work with businesses of various sizes. We offer scalable solutions and can create a custom package that aligns with your budget and business objectives. We recommend starting with a consultation to discuss your needs and see how we can help.'
-  }
+  },
 ];
