@@ -50,8 +50,9 @@
             <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Get in Touch</h2>
             <p class="mt-4 text-lg text-gray-500 max-w-3xl mx-auto">Have a question or want to work together? Fill out the form below, or reach out to us directly. We're here to help you achieve your AI automation and marketing goals.</p>
         </div>
-        <div class="grid lg:grid-cols-5 gap-12 items-start">
-            <div class="lg:col-span-2 bg-white p-8 rounded-lg shadow-lg">
+        <!-- <div class="grid lg:grid-cols-5 gap-12 items-start"> -->
+        <div class="flex flex-col items-start justify-center items-center">
+            <div class="w-full max-w-[500px] bg-white py-8 rounded-lg shadow-lg">
                 <h3 class="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
                 <ul class="space-y-6 text-gray-600">
                     <li class="flex items-start">
