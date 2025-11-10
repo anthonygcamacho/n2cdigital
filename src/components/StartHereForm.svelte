@@ -2,9 +2,9 @@
     let formAction: string;
 
     if (import.meta.env.DEV) {
-        formAction = "https://n8n.srv1048712.hstgr.cloud/webhook-test/your-start-here-test-webhook-id"; // TODO: Update with the actual test webhook ID for the "Start Here" form
+        formAction = "https://n8n.srv1048712.hstgr.cloud/webhook-test/2e9a790e-424a-4a29-898d-ee008677c8a5";
     } else {
-        formAction = "https://n8n.srv1048712.hstgr.cloud/webhook/your-start-here-production-webhook-id"; // TODO: Update with the actual production webhook ID for the "Start Here" form
+        formAction = "https://n8n.srv1048712.hstgr.cloud/webhook/2e9a790e-424a-4a29-898d-ee008677c8a5";
     }
 
     let submitting = false;
@@ -69,7 +69,7 @@
                     </div>
                     <div class="md:col-span-2">
                         <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
-                        <input id="phone" placeholder="+1 (555) 123-4567" class="w-full px-4 bg-gray-50 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required type="tel" value="" name="phone">
+                        <input id="phone" placeholder="123-555-4567" class="w-full px-4 bg-gray-50 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required type="tel" value="" name="phone">
                     </div>
                     <div class="md:col-span-2">
                         <label for="services-details" class="block text-sm font-medium text-gray-700 mb-1">Where would you like to begin?</label>
