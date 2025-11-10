@@ -161,19 +161,14 @@ export const TEAM_MEMBERS: TeamMember[] = [
 
 export const LINKEDIN_POSTS: LinkedInPost[] = [
     {
-        imageUrl: 'https://picsum.photos/1200/1200?random=30',
-        text: 'Just launched a groundbreaking SEO strategy for a client in the e-commerce space, boosting their organic traffic by 150% in just 3 months! 🚀 Data-driven decisions make all the difference. #SEO #DigitalMarketing #SuccessStory',
-        postUrl: '#',
+        imageUrl: 'https://media.licdn.com/dms/image/v2/D5622AQHxQApMvDQ9Tw/feedshare-shrink_1280/B56ZpsQsUyJYAs-/0/1762752906875?e=1764201600&v=beta&t=XtAHu7EGajIz0zU_nfzlmd8-MIKjbsXGRjO5UBuKQTc',
+        text: 'The Great AI Social Media Paradox: When Robots Become Your Marketing Team. Breaking News: Humans are officially too tired to post their own content. The robots have won. Sort of.',
+        postUrl: 'https://www.linkedin.com/feed/update/urn:li:activity:7393521574257127425/',
     },
     {
-        imageUrl: 'https://picsum.photos/1200/1200?random=31',
-        text: 'The future of marketing is AI. We\'re excited to share how our new custom AI automations are helping businesses streamline operations and personalize customer journeys at scale. Want to learn more? #AI #MarketingAutomation #FutureIsNow',
-        postUrl: '#',
-    },
-    {
-        imageUrl: 'https://picsum.photos/1200/1200?random=32',
-        text: 'Content is king, but distribution is queen. 👑 Our latest blog post dives deep into creating a content distribution network that gets your message in front of the right audience, every time. #ContentMarketing #Strategy #n2cDigital',
-        postUrl: '#',
+        imageUrl: 'https://media.licdn.com/dms/image/v2/D4E22AQEWWfeiYhvyAQ/feedshare-shrink_800/B4EZpXrcIbKcAk-/0/1762407597019?e=1764201600&v=beta&t=kptJTqK89h1jRT-QqSUCVrVVv-zit1kTDgq7fUA3ZC8',
+        text: 'Humans vs. Robots: The Ultimate Collaboration (No, Really). Plot twist: The future of automation isn\'t about choosing between humans OR machines—it\'s about the "AND."',
+        postUrl: 'https://www.linkedin.com/feed/update/urn:li:activity:7392073241848303616',
     },
 ];
 
