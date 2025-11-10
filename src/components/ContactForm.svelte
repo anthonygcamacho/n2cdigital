@@ -83,8 +83,8 @@
                             <input id="email" placeholder="john.doe@example.com" class="w-full px-4 py-3 bg-gray-50 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required type="email" value="" name="email">
                         </div>
                         <div>
-                            <label for="phone-number" class="block text-sm font-medium text-gray-700 mb-1">Phone Number <span class="text-gray-500">(Optional)</span></label>
-                            <input id="phone-number" placeholder="+1 (555) 123-4567" class="w-full px-4 bg-gray-50 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" type="tel" value="" name="phone-number" required>
+                            <label for="phone-number" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                            <input id="phone-number" placeholder="123-555-4567" class="w-full px-4 bg-gray-50 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" type="tel" value="" name="phone-number" required>
                         </div>
                         <div class="md:col-span-2">
                             <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
