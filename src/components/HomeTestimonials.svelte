@@ -18,7 +18,7 @@
 <section id="testimonials" class="py-20 bg-white">
     <div class="container mx-auto px-4">
         <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">What Our Clients Say</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900">What Our Clients Say</h2>
         </div>
         <div class="relative max-w-3xl mx-auto">
             <div class="bg-white rounded-xl shadow-lg p-8 md:p-12 text-center transition-opacity duration-500 ease-in-out">

@@ -12,7 +12,7 @@
 
 <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
     <div class="text-center mb-12">
-        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900">Frequently Asked Questions</h1>
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900">Frequently Asked Questions</h1>
         <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">Have questions? We've got answers. Here are some of the most common inquiries we receive.</p>
     </div>
     

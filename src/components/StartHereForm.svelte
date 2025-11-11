@@ -48,7 +48,7 @@
     <div class="container mx-auto px-4">
         <div class="max-w-3xl mx-auto">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Let's Get Started</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Let's Get Started</h2>
                 <p class="mt-4 text-lg text-gray-500">Please provide us with some details to begin the onboarding process. We're excited to learn more about your needs.</p>
             </div>
             

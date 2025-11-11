@@ -27,7 +27,7 @@
 <section id="services" class="py-20 bg-white">
     <div class="container mx-auto px-4">
         <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Our Services</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Services</h2>
             <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">We offer a wide range of AI Automation solutions to elevate your brand.</p>
         </div>
         {#each serviceChunks as chunk}

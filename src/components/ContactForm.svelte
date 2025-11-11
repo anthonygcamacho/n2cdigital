@@ -48,7 +48,7 @@
     <div class="container mx-auto px-4">
         <div class="max-w-3xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Get in Touch</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Get in Touch</h2>
                 <p class="mt-4 text-lg text-gray-500 max-w-3xl mx-auto">Have a question or want to work together? Fill out the form below, or reach out to us directly. We're here to help you achieve your AI automation and marketing goals.</p>
             </div>
             <!-- <div class="grid lg:grid-cols-5 gap-12 items-start"> -->

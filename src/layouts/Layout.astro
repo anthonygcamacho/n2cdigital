@@ -16,6 +16,11 @@ const isStartHerePage = Astro.url.pathname === '/starthere';
 		<meta name="generator" content={Astro.generator} />
 		<title>n2cDigital :: Home of many things beyond even our own imagination.</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+
+
 	</head>
 	<body class="relative">
 		<Header client:load isHomePage={isHomePage} isStartHerePage={isStartHerePage} />
@@ -33,5 +38,9 @@ const isStartHerePage = Astro.url.pathname === '/starthere';
 		margin: 0;
 		width: 100%;
 		height: 100%;
+		font-family: 'Open Sans', sans-serif;
+	}
+	h2 {
+		font-family: 'Oxanium' !important, sans-serif;
 	}
 </style>
