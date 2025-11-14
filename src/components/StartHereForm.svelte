@@ -56,24 +56,55 @@
             <form on:submit|preventDefault={handleSubmit} class="bg-white text-gray-800 p-8 rounded-lg shadow-lg">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                        <label for="first-name" class="block text-sm font-medium text-gray-700 mb-1">First Name</label>
+                        <label for="first-name" class="block text-sm font-medium text-gray-700 mb-1">First Name <span class="text-red-600">*</span></label>
                         <input id="first-name" placeholder="John" class="w-full px-4 py-3 bg-gray-50 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required type="text" value="" name="first-name">
                     </div>
                     <div>
-                        <label for="last-name" class="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
+                        <label for="last-name" class="block text-sm font-medium text-gray-700 mb-1">Last Name <span class="text-red-600">*</span></label>
                         <input id="last-name" placeholder="Doe" class="w-full px-4 py-3 bg-gray-50 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required type="text" value="" name="last-name">
                     </div>
                     <div class="md:col-span-2">
-                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email <span class="text-red-600">*</span></label>
                         <input id="email" placeholder="john.doe@example.com" class="w-full px-4 py-3 bg-gray-50 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required type="email" value="" name="email">
                     </div>
-                    <div class="md:col-span-2">
-                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
-                        <input id="phone" placeholder="123-555-4567" class="w-full px-4 bg-gray-50 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required type="tel" value="" name="phone">
+                    <div>
+                        <label for="role" class="block text-sm font-medium text-gray-700 mb-1">Role within Organization <span class="text-red-600">*</span></label>
+                        <input id="role" placeholder="Marketing Manager" class="w-full px-4 py-3 bg-gray-50 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required type="text" name="role">
+                    </div>
+                    <div>
+                        <label for="company-name" class="block text-sm font-medium text-gray-700 mb-1">Company Name <span class="text-red-600">*</span></label>
+                        <input id="company-name" placeholder="Acme Corp" class="w-full px-4 py-3 bg-gray-50 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required type="text" name="company-name">
                     </div>
                     <div class="md:col-span-2">
-                        <label for="services-details" class="block text-sm font-medium text-gray-700 mb-1">Where would you like to begin?</label>
+                        <label for="website" class="block text-sm font-medium text-gray-700 mb-1">Website <span class="text-gray-600 text-xs">(Optional)</span></label>
+                        <input id="website" placeholder="https://www.example.com" class="w-full px-4 py-3 bg-gray-50 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" type="url" name="website">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number <span class="text-gray-600 text-xs">(Optional)</span></label>
+                        <input id="phone" placeholder="123-555-4567" class="w-full px-4 bg-gray-50 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" type="tel" value="" name="phone">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label for="project-budget" class="block text-sm font-medium text-gray-700 mb-1">Project Budget <span class="text-gray-600 text-xs">(Optional)</span></label>
+                        <select id="project-budget" name="project-budget" class="w-full px-4 py-3 bg-gray-50 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option value="">Select a budget range</option>
+                            <option value="less-than-5k">Less than $5k</option>
+                            <option value="5k-20k">$5k - $20k</option>
+                            <option value="20k-100k">$20k - $100k</option>
+                            <option value="100k-500k">$100k - $500k</option>
+                            <option value="500k+">$500k+</option>
+                        </select>
+                    </div>
+                    <div class="md:col-span-2">
+                        <label for="services-details" class="block text-sm font-medium text-gray-700 mb-1">Where would you like to begin? <span class="text-red-600">*</span></label>
                         <textarea id="services-details" name="services-details" placeholder="Tell us about your project, goals, and which of our services you're most interested in (e.g., SEO, Social Media, AI Chatbots)." rows="6" class="w-full px-4 py-3 bg-gray-50 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                    </div>
+                    <div class="-mb-3 md:col-span-2 flex items-center">
+                        <input id="opt-in-email" type="checkbox" name="opt-in-email" class="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                        <label for="opt-in-email" class="ml-2 block text-sm text-gray-900">Opt into email list for exclusive offerings and bonus AI content</label>
+                    </div>
+                    <div class="md:col-span-2 flex items-center">
+                        <input id="opt-in-sms" type="checkbox" name="opt-in-sms" class="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                        <label for="opt-in-sms" class="ml-2 block text-sm text-gray-900">Opt into SMS and text messages</label>
                     </div>
                 </div>
                 <div class="text-left mt-8">
