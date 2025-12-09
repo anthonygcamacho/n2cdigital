@@ -153,7 +153,7 @@ export const TESTIMONIALS: Testimonial[] = [
 ];
 
 export const TEAM_MEMBERS: TeamMember[] = [
-    { imageUrl: 'https://media.licdn.com/dms/image/v2/C5603AQFfl2Xzg9rx0w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1591327637769?e=1763596800&v=beta&t=-09cvng1IZCmJoB3_cF7i8YBzQGS8J-V5Yi1oEZVB3k', name: 'Anthony Camacho', role: 'Founder & CEO', linkedinUrl: 'https://www.linkedin.com/in/anthonygcamacho' },
+    { imageUrl: '/me.jpeg', name: 'Anthony Camacho', role: 'Founder & CEO', linkedinUrl: 'https://www.linkedin.com/in/anthonygcamacho' },
     // { imageUrl: 'https://picsum.photos/200/200?random=21', name: 'Maria Garcia', role: 'Head of SEO', linkedinUrl: 'https://www.linkedin.com/in/anthonygcamacho' },
     // { imageUrl: 'https://picsum.photos/200/200?random=22', name: 'David Chen', role: 'Lead Developer', linkedinUrl: 'https://www.linkedin.com/in/anthonygcamacho' },
     // { imageUrl: 'https://picsum.photos/200/200?random=23', name: 'Sophia Lee', role: 'Social Media Manager', linkedinUrl: 'https://www.linkedin.com/in/anthonygcamacho' },
@@ -161,14 +161,19 @@ export const TEAM_MEMBERS: TeamMember[] = [
 
 export const LINKEDIN_POSTS: LinkedInPost[] = [
     {
-        imageUrl: 'https://media.licdn.com/dms/image/v2/D5622AQHxQApMvDQ9Tw/feedshare-shrink_1280/B56ZpsQsUyJYAs-/0/1762752906875?e=1764201600&v=beta&t=XtAHu7EGajIz0zU_nfzlmd8-MIKjbsXGRjO5UBuKQTc',
+        imageUrl: '/pennies-per-post.jpeg',
         text: 'The Great AI Social Media Paradox: When Robots Become Your Marketing Team. Breaking News: Humans are officially too tired to post their own content. The robots have won. Sort of.',
         postUrl: 'https://www.linkedin.com/feed/update/urn:li:activity:7393521574257127425/',
     },
     {
-        imageUrl: 'https://media.licdn.com/dms/image/v2/D4E22AQEWWfeiYhvyAQ/feedshare-shrink_800/B4EZpXrcIbKcAk-/0/1762407597019?e=1764201600&v=beta&t=kptJTqK89h1jRT-QqSUCVrVVv-zit1kTDgq7fUA3ZC8',
+        imageUrl: '/hitl-power-of-land.jpeg',
         text: 'Humans vs. Robots: The Ultimate Collaboration (No, Really). Plot twist: The future of automation isn\'t about choosing between humans OR machines—it\'s about the "AND."',
         postUrl: 'https://www.linkedin.com/feed/update/urn:li:activity:7392073241848303616',
+    },
+    {
+        imageUrl: '/ai-wont-run-your=projects.jpeg',
+        text: 'Why Most AI Project Management Tools Miss the Mark (And One Use Case That Actually Works)',
+        postUrl: 'https://www.linkedin.com/feed/update/urn:li:activity:7395341682092933120',
     },
 ];
 
