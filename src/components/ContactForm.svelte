@@ -2,9 +2,9 @@
     let formAction: string;
 
     if (import.meta.env.DEV) {
-        formAction = "https://n8n.srv1048712.hstgr.cloud/webhook-test/5312f882-6269-4dec-8c44-f3ceae39a963";
+        formAction = "https://n8n.srv1048712.hstgr.cloud/webhook-test/f872697b-7d5a-4b08-b876-9a667fe2b589";
     } else {
-        formAction = "https://n8n.srv1048712.hstgr.cloud/webhook/5312f882-6269-4dec-8c44-f3ceae39a963";
+        formAction = "https://n8n.srv1048712.hstgr.cloud/webhook/f872697b-7d5a-4b08-b876-9a667fe2b589";
     }
 
     let submitting = false;
