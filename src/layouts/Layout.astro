@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 
 const isHomePage = Astro.url.pathname === '/';
 const isStartHerePage = Astro.url.pathname === '/starthere';
+const isSurveyPage = Astro.url.pathname === '/srv/survey-2025001';
 ---
 
 <!doctype html>
@@ -23,7 +24,7 @@ const isStartHerePage = Astro.url.pathname === '/starthere';
 
 	</head>
 	<body class="relative">
-		<Header client:load isHomePage={isHomePage} isStartHerePage={isStartHerePage} />
+		<Header client:load isHomePage={isHomePage} isStartHerePage={isStartHerePage} isSurveyPage={isSurveyPage} />
 		<slot />
 		<Footer />
 	</body>

@@ -3,6 +3,7 @@
 
     export let isHomePage: boolean;
     export let isStartHerePage: boolean;
+    export let isSurveyPage: boolean;
 
     let isMenuOpen = false;
     let y = 0;
@@ -38,35 +39,39 @@
                 </a>
             </div>
 
-            <nav class="hidden lg:block">
-                <ul class="flex items-center space-x-8">
-                    <li><a href="/" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>Home</a></li>
-                    <li><a href="/#about-us" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>About Us</a></li>
-                    <li><a href="/#services" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>Services</a></li>
-                    <!-- <li><a href="blog" class="font-medium transition-colors duration-200 text-white hover:text-gray-200">Blog</a></li> -->
-                    <!-- <li><a href="/#testimonials" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>Testimonials</a></li> -->
-                    <li><a href="faq" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>FAQ</a></li>
-                    <li><a href="contact" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>Contact Us</a></li>
-                </ul>
-            </nav>
-            {#if !isStartHerePage}
+            {#if !isSurveyPage}
+                <nav class="hidden lg:block">
+                    <ul class="flex items-center space-x-8">
+                        <li><a href="/" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>Home</a></li>
+                        <li><a href="/#about-us" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>About Us</a></li>
+                        <li><a href="/#services" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>Services</a></li>
+                        <!-- <li><a href="blog" class="font-medium transition-colors duration-200 text-white hover:text-gray-200">Blog</a></li> -->
+                        <!-- <li><a href="/#testimonials" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>Testimonials</a></li> -->
+                        <li><a href="faq" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>FAQ</a></li>
+                        <li><a href="contact" class="font-medium transition-colors duration-200" class:text-white={isHomePage && !scrolled} class:hover:text-gray-200={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled} class:hover:text-gray-700={!isHomePage || scrolled}>Contact Us</a></li>
+                    </ul>
+                </nav>
+            {/if}
+            {#if !isStartHerePage && !isSurveyPage}
                 <div class="hidden lg:block">
                     <!-- svelte-ignore a11y_invalid_attribute -->
                     <a href="/starthere" class="px-6 py-2 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors duration-300">Let's Get Started</a>
                 </div>
-            {:else}
+            {:else if !isSurveyPage}
                 <div class="hidden lg:block w-24"></div>
             {/if}
-            <div class="lg:hidden">
-                <!-- svelte-ignore a11y_consider_explicit_label -->
-                <button on:click={toggleMenu} class="focus:outline-none" class:text-white={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled}>
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-                </button>
-            </div>
+            {#if !isSurveyPage}
+                <div class="lg:hidden">
+                    <!-- svelte-ignore a11y_consider_explicit_label -->
+                    <button on:click={toggleMenu} class="focus:outline-none" class:text-white={isHomePage && !scrolled} class:text-black={!isHomePage || scrolled}>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            {/if}
         </div>
     </div>
 
-    {#if isMenuOpen}
+    {#if isMenuOpen && !isSurveyPage}
         <div class="lg:hidden fixed inset-0 bg-gray-900 bg-opacity-95 z-40">
             <div class="flex justify-end p-4">
                 <!-- svelte-ignore a11y_consider_explicit_label -->

@@ -1,0 +1,16 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SurveyForm from '../../components/srv/survey-2025001.svelte';
+---
+
+<Layout title="AI Readiness Survey">
+  <main class="flex min-h-screen flex-col items-center justify-center p-4 md:p-8">
+    <SurveyForm client:load />
+  </main>
+</Layout>
+
+<style is:global>
+  body {
+    background-color: #f0f2f5;
+  }
+</style>
